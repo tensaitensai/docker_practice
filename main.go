@@ -12,7 +12,7 @@ func main() {
 		fmt.Fprintf(w, "Docker dayo!")
 	})
 	log.Println("start server")
-	server := &http.Server{Addr: "8080"}
+	server := &http.Server{Addr: ":8080"}
 	if err := server.ListenAndServe(); err != nil {
 		log.Println((err))
 	}
